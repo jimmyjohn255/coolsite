@@ -1,0 +1,31 @@
+<h1>coming soon</h1>
+<p id="subtitle"></p>
+
+
+<link rel="stylesheet" href="style.css">
+<script>
+    var sub = document.getElementById("subtitle")
+
+    function delay(time) {
+
+        return new Promise(resolve => setTimeout(resolve, time))
+
+    }
+
+    async function reveal_splash(msg) {
+
+        var current = ""
+
+        for (let i = 0; i < msg.length; i++) {
+
+            current += msg.charAt(i)
+            document.getElementById("subtitle").innerText = current + "_"
+            await delay(Math.random() * 100.0)
+
+        }
+    }
+
+    delay(2000).then(() => {
+        reveal_splash("maybe..")
+    })
+</script>

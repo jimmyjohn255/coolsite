@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+h1 {
+   font-family: Source Code Pro, monospace;
+   font-weight: 700;
+   color: rgba(255, 255, 255);
+}
+
+p {
+    font-family: Source Code Pro;
+    color: rgb(160, 160, 160);
+}
+
+body {
+    background-color: rgb(12, 16, 30)
+}
+
+a {
+    font-family: Source Code Pro;
+    font-weight: 700;
+    color: rgb(44, 255, 37);
+}
+
+a:hover {
+    font-family: Source Code Pro;
+    font-weight: 700;
+    color: rgb(37, 255, 157);
+}
