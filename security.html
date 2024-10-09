@@ -1,0 +1,36 @@
+<h1>security</h1>
+
+<h2>password protection</h2>
+
+<p id="subtitle">
+    making a password may be simple but it is the only thing hackers need to brute force into your account.
+    one way hackers log into your account is the brute force method, they try every single combonation,
+    until one is found. this can be easily countered by selecting a complex password.
+</p>
+
+<link rel="stylesheet" href="style.css">
+<script>
+    var sub = document.getElementById("subtitle")
+
+    function delay(time) {
+
+        return new Promise(resolve => setTimeout(resolve, time))
+
+    }
+
+    async function reveal_splash(msg) {
+
+        var current = ""
+
+        for (let i = 0; i < msg.length; i++) {
+
+            current += msg.charAt(i)
+            document.getElementById("subtitle").innerText = current + "_"
+            await delay(Math.random() * 100.0)
+
+        }
+    }
+
+    var text = sub.innerText
+    reveal_splash(text)
+</script>
